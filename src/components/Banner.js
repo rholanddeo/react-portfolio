@@ -21,7 +21,7 @@ const Banner = () => {
         variants={fadeIn('up', 0.3)} initial="hidden"
         whileInView={'show'}
         viewport={{ once: false, amount: 0.7 }}
-        className='text-[47px] font-bold leading-[0.8] lg:text-[110px]'>
+        className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
           RHOLAND <span>DEO</span>
           {/* RHOLAND DEO EKA PUTRA */}
         </motion.h1>
@@ -29,7 +29,7 @@ const Banner = () => {
       variants={fadeIn('up', 0.5)} initial="hidden"
       whileInView={'show'}
       viewport={{ once: false, amount: 0.7 }}
-      className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+      className='mb-6 text-[30px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1]'>
       <span className='text-white mr-4'>Seorang</span>
       <TypeAnimation
         sequence={[
@@ -94,7 +94,9 @@ const Banner = () => {
        whileInView={'show'}
       //  viewport={{ once: false, amount: 0.7 }}
       className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-        <img src={Image} alt='' className="rounded-full w-[200px] h-{100px}" />
+        {/* <img src={Image} alt='' className="rounded-full w-[200px] h-{100px}" /> */}
+        <img src={Image} alt='' />
+
       </motion.div>
     </div>
     </div>
