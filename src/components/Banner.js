@@ -1,6 +1,8 @@
 import React from 'react';
 
-import Image from '../assets/avatar.svg';
+// import Image from '../assets/avatar.svg';
+import Image from '../assets/set.JPG';
+
 
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -94,8 +96,9 @@ const Banner = () => {
        whileInView={'show'}
       //  viewport={{ once: false, amount: 0.7 }}
       className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-        {/* <img src={Image} alt='' className="rounded-full w-[200px] h-{100px}" /> */}
-        <img src={Image} alt='' />
+        <img src={Image} alt='' className="rounded-full w-[300px] mx-auto" />
+
+        {/* <img src={Image} alt='' /> */}
 
       </motion.div>
     </div>
