@@ -32,7 +32,7 @@ const Banner = () => {
       whileInView={'show'}
       viewport={{ once: false, amount: 0.7 }}
       className='mb-6 text-[30px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1]'>
-      <span className='text-white mr-4'>Seorang</span>
+      <span className='text-white mr-4'>IM A</span>
       <TypeAnimation
         sequence={[
           'IT Enthusiast',
@@ -57,7 +57,7 @@ const Banner = () => {
        whileInView={'show'}
        viewport={{ once: false, amount: 0.7 }}
       className='mb-8 max-w-lg mx-auto lg:mx-0'>
-      IT Enthusiast, Programmer, Fullstack Web Developer. Mempelajari, merancang dan membangun aplikasi berbasis website maupun android.
+      Mahasiswa Semester 7 Jurusan Teknik Informatika di Universitas Palangka Raya. IT Enthusiast, Programmer, Fullstack Web Developer. Mempelajari, merancang dan membangun aplikasi berbasis website maupun android.
       </motion.p>
 
       <motion.div
@@ -95,13 +95,15 @@ const Banner = () => {
        variants={fadeIn('down', 0.5)} initial="hidden"
        whileInView={'show'}
       //  viewport={{ once: false, amount: 0.7 }}
-      className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+      // className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'
+      >
         <img src={Image} alt='' className="rounded-full w-[300px] mx-auto" />
 
         {/* <img src={Image} alt='' /> */}
 
       </motion.div>
     </div>
+    
     </div>
     </section>;
 };
