@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from '../assets/test.JPG';
+import Image from '../assets/avatar.svg';
 
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -11,17 +11,25 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 const Banner = () => {
-  return <section id='home' className='section'>
+  return <section id='home' className='min-h-[85vh] lg:min-h-[78vh] flex items-center'>
     <div className='container mx-auto'>
-      <div className='flex flex-col gap-y-8 lg:flex-row'>
+      <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
 
       
       <div className='flex-1 text-center font-secondary lg:text-left'>
-        <h1 className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
+        <motion.h1 
+        variants={fadeIn('up', 0.3)} initial="hidden"
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.7 }}
+        className='text-[47px] font-bold leading-[0.8] lg:text-[110px]'>
           RHOLAND <span>DEO</span>
           {/* RHOLAND DEO EKA PUTRA */}
-        </h1>
-      <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+        </motion.h1>
+      <motion.div 
+      variants={fadeIn('up', 0.5)} initial="hidden"
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.7 }}
+      className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
       <span className='text-white mr-4'>Seorang</span>
       <TypeAnimation
         sequence={[
@@ -41,13 +49,20 @@ const Banner = () => {
         wrapper='span'
         repeat={Infinity}
       />
-      </div>
-      <p className='mb-8 max-w-lg mx-auto lg:mx-0'>
-      Mahasiswa Semester 7 Jurusan Teknik Informatika di Universitas Palangka Raya. IT Enthusiast, Programmer, 
-      Fullstack Web Developer. Mempelajari, merancang dan membangun aplikasi berbasis website maupun android.
-      </p>
+      </motion.div>
+      <motion.p
+       variants={fadeIn('up', 0.4)} initial="hidden"
+       whileInView={'show'}
+       viewport={{ once: false, amount: 0.7 }}
+      className='mb-8 max-w-lg mx-auto lg:mx-0'>
+      IT Enthusiast, Programmer, Fullstack Web Developer. Mempelajari, merancang dan membangun aplikasi berbasis website maupun android.
+      </motion.p>
 
-      <div className='flex max-w-max gap-x-6 items-center mb-12
+      <motion.div
+       variants={fadeIn('up', 0.6)} initial="hidden"
+       whileInView={'show'}
+       viewport={{ once: false, amount: 0.7 }}
+      className='flex max-w-max gap-x-6 items-center mb-12
       mx-auto lg:mx-0'>
         <button className='btn btn-lg'>
           Contact me
@@ -55,8 +70,12 @@ const Banner = () => {
         <a href='#' className='text-gradient btn-link'>
             My Portofolio
         </a>
-      </div>
-      <div className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+      </motion.div>
+      <motion.div
+       variants={fadeIn('up', 0.7)} initial="hidden"
+       whileInView={'show'}
+       viewport={{ once: false, amount: 0.7 }}
+      className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
           <a href='#'>
             <FaGithub />
           </a>
@@ -66,13 +85,17 @@ const Banner = () => {
           <a href='#'>
             <FaLinkedin />
           </a>
-      </div>
+      </motion.div>
       </div>
 
       
-      <div>
+      <motion.div 
+       variants={fadeIn('down', 0.5)} initial="hidden"
+       whileInView={'show'}
+      //  viewport={{ once: false, amount: 0.7 }}
+      className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
         <img src={Image} alt='' className="rounded-full w-[200px] h-{100px}" />
-      </div>
+      </motion.div>
     </div>
     </div>
     </section>;
