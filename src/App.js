@@ -10,27 +10,27 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
-    // <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
-    //   <Header />
-    //   <Banner />
-    //   <Nav />
-    //   <About />
-    //   <Services />
-    //   <Work />
-    //   <Contact />
-    //   <div className=''></div>
-    // </div>
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+      <Header />
+      <Banner />
+      <Nav />
+      <About />
+      <Services />
+      <Work />
+      <Contact />
+      <div className='h-[4000px]'></div>
+    </div>
 
     // <div className='bg-gradient-to-l from-purple-900 to-blue-900 bg-no-repeat bg-cover overflow-hidden'>
-    <div className='bg-gradient-to-r from-red-900  via-yellow-900 to-green-900 bg-no-repeat bg-cover overflow-hidden'>
-  <Header />
-  <Banner />
-  <Nav />
-  <About />
-  <Services />
-  <Work />
-  <Contact />
-</div>
+//     <div className='bg-gradient-to-r from-red-900  via-yellow-900 to-green-900 bg-no-repeat bg-cover overflow-hidden'>
+//   <Header />
+//   <Banner />
+//   <Nav />
+//   <About />
+//   <Services />
+//   <Work />
+//   <Contact />
+// </div>
 
   );
 };
