@@ -8,9 +8,9 @@ const Header = () => {
      <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
         <a href='#'>
-          <img src={Logo} alt='' className='rounded-lg w-[200px]'/>
+          <img src={Logo} alt='' className='rounded-lg w-[150px]'/>
         </a>
-        <button className='btn btn-sm'>Hubungi Saya</button>
+        <button className='btn btn-sm'>My Portofolio</button>
         </div>
     </div>
   </header>
